@@ -4,9 +4,15 @@
   # ReactMultiPage
 </div>
 
-## Createing React app by using Vite
+<div align="center">
 
-### Command
+## React app by using Vite
+</div> 
+
+### Command for creating app
 
 + npm create vite@latest
 
+### Packages Use
+
++ React Router Dom
