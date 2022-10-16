@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   font-family: 'Work Sans', sans-serif;
  }
 html {
-  font-size: 62.5%;
+  font-size: 90%;
   /* scroll-behavior: smooth; */
   /* 1rem = 10px */
   overflow-x: hidden;
@@ -21,9 +21,10 @@ body {
 
 h1{
   color:${({ theme }) => theme.colors.heading};
-  font-size: 6rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 700;
 }
+
 h2 {
    color: ${({ theme }) => theme.colors.heading};
    font-size: 4.4rem;
@@ -38,9 +39,8 @@ h2 {
 p {
   color: ${({ theme }) => theme.colors.text};
   opacity: .7;
-  font-size: 1.65rem;
+  font-size: 1.2rem;
   line-height: 1.5;
-  margin-top: 1rem;
   font-weight:400;
 }
 a {
@@ -48,6 +48,18 @@ a {
 }
 li {
   list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 

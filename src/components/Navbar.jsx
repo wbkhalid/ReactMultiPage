@@ -7,18 +7,17 @@ const Navbar = () => {
   
   .navbar-list {
     display: flex;
-    gap: 4.8rem;
-    font-weightbold
+    gap: 4rem;
+    font-weight:700;
    
       .navbar-link {
         &:link,
         &:visited {
           display: inline-block;
-          font-size: 1.4rem;
+          font-size: 1.2;
           text-transform: uppercase;
           color: ${({ theme }) => theme.colors.black};
           transition: color 0.3s linear;
-          font-weight:400
           
         }
         &:hover,

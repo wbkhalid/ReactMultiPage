@@ -1,8 +1,16 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const Home = () => {
+
+  const data = {
+    name: 'Waleed bin kahlid',
+    image: './iamges.hero'
+  }
   return (
-    <div>Home</div>
+
+
+    <Hero {...data} />
   )
 }
 

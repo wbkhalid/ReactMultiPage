@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const Header = () => {
   const MainHeader = styled.header`
-    padding: 0 4.8rem;
-    height: 10rem;
+    padding: 0 5rem;
+    height: 5rem;
     background-color: ${({ theme }) => theme.colors.bg};
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,7 @@ const Header = () => {
         <img src="./public/logo.webp" alt="logo" className="logo" />
       </NavLink>
       <Navbar />
+   
     </MainHeader>
   );
 };
