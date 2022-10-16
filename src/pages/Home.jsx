@@ -5,7 +5,7 @@ const Home = () => {
 
   const data = {
     name: 'Waleed bin kahlid',
-    image: './iamges.hero'
+    image: './images/hero.jpg',
   }
   return (
 

@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="./public/logo.webp" alt="logo" className="logo" />
+        <img src="./images/logo.webp" alt="logo" className="logo" />
       </NavLink>
       <Navbar />
    

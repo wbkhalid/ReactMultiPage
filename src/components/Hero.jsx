@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from './Button';
 
-const Hero = ({name ,iamge}) => {
+const Hero = ({name ,image}) => {
   const Wrapper = styled.section`
     .container {
       padding: 1rem 3rem;
@@ -54,7 +54,7 @@ const Hero = ({name ,iamge}) => {
         </div>
 
         <div className="section-hero-image">
-          <picture><img src='./images/hero.jpg'   alt='Hero pic' className="hero-img"/></picture>
+          <picture><img src={image}  alt='About pic' className="hero-img"/></picture>
         </div>
       </div>
     </Wrapper>
