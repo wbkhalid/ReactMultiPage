@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { useAppConusmer } from '../context/AppContext';
 import { Button } from './Button';
 
-const Hero = ({name ,image}) => {
+const Hero = () => {
   const Wrapper = styled.section`
     .container {
       padding: 1rem 3rem;
@@ -39,8 +40,10 @@ const Hero = ({name ,image}) => {
 
     .hero-img{
       max-width:90%;
+      opacity:80%
     }
   `;
+  const {name,image}= useAppConusmer()
   return (
     <Wrapper>
       <div className="container grid grid-two-column">

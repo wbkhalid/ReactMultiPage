@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Hero from '../components/Hero'
+import { useAppConusmer } from '../context/AppContext';
 
 const About = () => {
-  const data = {
-    name: 'WBK Chaudhary',
-    image: "./images/about.jpg",
-  }
+  const { updateAboutPage } = useAppConusmer();
+
+  useEffect(() => {
+    updateAboutPage();
+  }, []);
   return (
-    <Hero {...data} />
+    <Hero />
   )
   
 }

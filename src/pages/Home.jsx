@@ -1,17 +1,14 @@
-import React from 'react'
-import Hero from '../components/Hero'
+import React,{useEffect} from 'react';
+import Hero from '../components/Hero';
+import { useAppConusmer } from '../context/AppContext';
 
 const Home = () => {
+  const { updateHomePage } = useAppConusmer();
 
-  const data = {
-    name: 'Waleed bin kahlid',
-    image: './images/hero.jpg',
-  }
-  return (
+  useEffect(() => {
+    updateHomePage();
+  }, []);
+  return <Hero />;
+};
 
-
-    <Hero {...data} />
-  )
-}
-
-export default Home
+export default Home;
