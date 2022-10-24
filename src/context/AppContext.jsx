@@ -1,17 +1,20 @@
-import React, { useContext, useReducer } from 'react';
-import reducer from './Reducer'
+import React, { useContext, useReducer, useEffect } from 'react';
+import reducer from './Reducer';
 
-const initialState = {
-  name: '',
-  image: '',
-};
-
-
+// const API = 'https://catfact.ninja/fact';
 
 const AppContext = React.createContext();
-const AppProvider = ({ children }) => {
 
-  const [state, dispatch] = useReducer(reducer, initialState);
+const API = 'https://api.github.com/users';
+
+const intialState = {
+  name: '',
+  image: '',
+  services: [],
+};
+
+const AppProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, intialState);
 
   const updateHomePage = () => {
     return dispatch({
@@ -32,6 +35,21 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const getServices = async (url) => {
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      dispatch({ type: 'GET_SERVICES', payload: data });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // to call the api
+  useEffect(() => {
+    getServices(API);
+  }, []);
+
   return (
     <AppContext.Provider value={{ ...state, updateHomePage, updateAboutPage }}>
       {children}
@@ -42,6 +60,5 @@ const AppProvider = ({ children }) => {
 const useAppConusmer = () => {
   return useContext(AppContext);
 };
-export default AppContext;
 
 export { AppProvider, useAppConusmer };
