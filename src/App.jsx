@@ -1,10 +1,11 @@
+import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
 import Services from './pages/Services';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Error from './pages/Error';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './GlobalStyle';
 
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>

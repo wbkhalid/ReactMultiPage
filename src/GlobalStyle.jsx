@@ -82,6 +82,9 @@ li {
       border: 1px solid ${({ theme }) => theme.colors.border};
       text-transform: uppercase;
      box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+     border-radius: 1rem;
+     font-size: 1rem;
+
   }
       input[type="submit"]{
       max-width: 12rem;
@@ -90,8 +93,8 @@ li {
       padding: 1rem 1rem;
       border-style: solid;
       border-width: .1rem;
-      text-transform: uppercase;
-      font-size: 1.8rem;
+      text-transform: camelcase;
+      font-size: 1.5rem;
       cursor: pointer;
       border-radius: 1rem
       }
