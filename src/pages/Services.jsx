@@ -8,7 +8,7 @@ const Services = () => {
   const { services } = useAppConusmer();
 
   const Wrapper = styled.section`
-    padding: 9rem 2rem;
+    padding: .5rem
     background-color: ${({ theme }) => theme.colors.bg};
 
     .container {
@@ -41,8 +41,7 @@ const Services = () => {
       }
       img {
         max-width: 90%;
-        margin-top: 1.5rem;
-        height: 20rem;
+        height: 10rem;
         transition: all 0.2s linear;
       }
     }
