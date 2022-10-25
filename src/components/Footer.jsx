@@ -26,6 +26,7 @@ const Footer = () => {
       h3 {
         color: ${({ theme }) => theme.colors.hr};
         margin-bottom: 2rem;
+        
       }
       p {
         color: ${({ theme }) => theme.colors.white};
@@ -42,8 +43,10 @@ const Footer = () => {
         align-items: center;
         .form {
           display: flex;
-          flex-dirextion: column;
-          padding:.5rem
+          flex-direction: column;
+          padding: .5rem;
+          gap:1rem
+          
         }
       }
 
@@ -59,7 +62,6 @@ const Footer = () => {
             color: ${({ theme }) => theme.colors.white};
             font-size: 1rem;
             position: relative;
-           
           }
         }
       }

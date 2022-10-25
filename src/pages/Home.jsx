@@ -1,6 +1,8 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import { useAppConusmer } from '../context/AppContext';
+import Contact from './Contact';
+import Services from './Services';
 
 const Home = () => {
   const { updateHomePage } = useAppConusmer();
@@ -8,7 +10,13 @@ const Home = () => {
   useEffect(() => {
     updateHomePage();
   }, []);
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <Services />
+      <Contact />
+    </>
+  );
 };
 
 export default Home;

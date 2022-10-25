@@ -13,6 +13,22 @@ html {
   /* 1rem = 10px */
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+   background-color: rgb(24 24 29);
+}
+::-webkit-scrollbar-thumb {
+ 
+  background: #fff;
+    border: 5px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+
 body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
@@ -79,23 +95,23 @@ li {
     input, textarea{
       max-width: 50rem;
       color: ${({ theme }) => theme.colors.black};
-      padding: 1rem 2rem;
+      padding: .5rem 2rem;
       border: 1px solid ${({ theme }) => theme.colors.border};
-      text-transform: uppercase;
+      text-transform: capitalize;
      box-shadow: ${({ theme }) => theme.colors.shadowSupport};
      border-radius: 1rem;
      font-size: 1rem;
 
   }
       input[type="submit"]{
-      max-width: 12rem;
+      max-width: 10rem;
       background-color: ${({ theme }) => theme.colors.btn};
       color: ${({ theme }) => theme.colors.white};
-      padding: 1rem 1rem;
+      padding: .5rem .5rem;
       border-style: solid;
       border-width: .1rem;
-      text-transform: camelcase;
-      font-size: 1.5rem;
+      text-transform: capitalize;
+      font-size: 1rem;
       cursor: pointer;
       border-radius: 1rem
       }
