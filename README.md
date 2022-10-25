@@ -16,3 +16,6 @@
 ### Packages Use
 
 + React Router Dom
++ react-icons
++ Styled Components
+   
