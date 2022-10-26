@@ -4,9 +4,20 @@
   # ReactMultiPage
 </div>
 
+## Deploy Site on Netlify
+
+#### Deploy Link:
+
++ https://wbkmultipagereactapp.netlify.app
+
+### API used:
+
++ https://api.github.com/users
+
 <div align="center">
 
 ## React app by using Vite
+  
 </div> 
 
 ### Command for creating app
