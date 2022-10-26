@@ -52,10 +52,10 @@ const Footer = () => {
 
       .footer-social--icons {
         display: flex;
-        gap: 1rem;
+        gap: .7rem;
         cursor: pointer;
         div {
-          padding: 1rem;
+          padding: .7rem;
           border-radius: 50%;
           border: 1px solid ${({ theme }) => theme.colors.white};
           .icons {
