@@ -60,6 +60,10 @@ const GoToTop = () => {
         }
       }
     }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      left:0%;
+    }
   `;
   return (
     <Wrapper>
